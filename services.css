@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&display=swap');
+body {
+    font-family: Poppins;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 32px;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+/* header */
+.logo {
+    max-height: 40px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+}
+
+.nav-link.home {
+    text-decoration: underline; 
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-button,
+.signup-button {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button {
+    color: #000;
+    background-color: transparent;
+}
+
+.signup-button {
+    background-color: #ACACAC;
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* End of header */
+/*Starter*/ 
+.starter {
+    margin-top: 90px;
+    position: relative;
+    width: 100%;
+    background-image: url('img/starter1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20px;
+    padding: 90px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.starter h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .starter h1 {
+        font-size: 24px;
+    }
+
+    .pink-box {
+        max-width: 100%;
+    }
+
+    .category-box {
+        margin: 10px;
+    }
+
+    .package {
+        padding: 8px;
+    }
+}
+/* Starter*/
+
+.pink-box {
+    background-color: #ff94bb;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+/*categorys*/
+.center-services{
+    text-align: center;
+}
+.browse-category-title {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+}
+
+.categories {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.category-box {
+    position: relative;
+    width: 350px;
+    text-align: center;
+    margin: 20px 50px;
+    flex: 0 0 auto; 
+}
+
+.box-content {
+    border: 1px solid #dee2e6;
+    padding: 70px;
+    margin-right: -60px;
+    border-radius: 20px;
+}
+
+
+.category-box.birthday {
+    background-image: url('img/R.jfif'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box.music {
+    background-image: url('img/party.jpg'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box.wedding {
+    background-image: url('img/wedding.jpg'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box.graduation {
+    background-image: url('img/Fund.jfif'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box.four-ser {
+    background-image: url('img/Fund.jfif'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box.five-ser {
+    background-image: url('img/Initation.jpg'); 
+    background-size: cover;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+
+.category-box p {
+    position: absolute;
+    bottom: -45px; 
+    left: 0;
+    right: 0;
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 576px) {
+    .category-box {
+        width: calc(100% - 20px);
+    }
+}
+/* packages */
+.package-title {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 45px; /* Adjust as needed */
+}
+
+.packages {
+    margin-top: 30px;
+    margin-left: 22px; 
+    margin-right: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 100px;
+}
+
+.package {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.package-custom {    
+    width: calc(44.3333% - 20px);
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px; /* Adjust the margin as needed */
+}
+
+@media (max-width: 576px) {
+    .package-custom {
+        width: calc(100% - 20px);
+    }
+}
+
+.package-custom p{ 
+    margin-top: 20px;  
+    font-size: 30px;
+}
+
+.package-custom h3{ 
+    margin-top: 20px;  
+    font-size: 30px;
+}
+
+
+.package p{
+    margin-top: -0px;
+}
+
+.package h3{
+    color: #fff;
+}
+
+.price-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px auto;
+    margin-top: -15px;
+}
+
+
+.package-header {
+    background: linear-gradient(to bottom, #000 50%, #fff 50%);
+    border-radius: 10px; 
+    height: 180px; 
+    margin-bottom: -60px;
+}
+
+.select-plan-button {
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 2px solid #000000; 
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Bronze package */
+.package-bronze .package-header {
+    background: linear-gradient(to bottom, #cd7f32 50%, #fff 50%);
+}
+
+.package-bronze h3 {
+    color: #ffffff;
+}
+
+.package-bronze .price-circle {
+    background-color: #cd7f32;
+}
+
+/* Silver package */
+.package-silver .package-header {
+    background: linear-gradient(to bottom, #c0c0c0 50%, #fff 50%);
+}
+
+.package-silver h3 {
+    color: #ffffff;
+}
+
+.package-silver .price-circle {
+    background-color: #c0c0c0;
+}
+
+/* Gold package */
+.package-gold .package-header {
+    background: linear-gradient(to bottom, #ffd700 50%, #fff 50%);
+}
+
+.package-gold h3 {
+    color: #ffffff;
+}
+
+.package-gold .price-circle {
+    background-color: #ffd700;
+}
+
+
+/* Packages */
+
+
+/* ... Footer ... */
+.separator {
+    margin-top: 30px;
+    border: none;
+    border-top: 5px solid #000;
+    width: 100%;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-height: 40px;
+}
+
+.newsletter h4 {
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ... Footer ... */
